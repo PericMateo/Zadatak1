@@ -1,0 +1,20 @@
+using System;
+
+namespace PrijestupneGodine
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int currYear = 2020;
+            for (int i = 0; i < 20; i++)
+            {
+                currYear += 4;
+                if(((currYear%4==0) &&(currYear%100!=0))||(currYear%400==0))
+                {
+                    Console.WriteLine(currYear);
+                }
+            }
+        }
+    }
+}
